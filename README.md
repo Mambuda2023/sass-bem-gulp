@@ -14,7 +14,6 @@
 
     * Установка node.js - <https://nodejs.org/en>
     * Установка gulp глобально - <https://gulpjs.com/docs/en/getting-started/quick-start>
-    * Установка typescript глобально - <https://www.typescriptlang.org/download> или npm install -g typescript
     * Для установки всех пакетов воспользуйтесь командой - npm init
     * Перейдите в gulpfile.js
     * Приступите к настройки нужных типов файлов и нужных зависимостей
@@ -22,8 +21,6 @@
     * Документация сборки - <https://github.com/gulpjs/gulp>
 
 ### Пакеты использоавнные в данной сборке
-
-    * gulp-pug - <https://www.npmjs.com/package/gulp-pug>
     * gulp-htmlmin(Минификация) - <https://www.npmjs.com/package/gulp-htmlmin>
     * del(Для очистки директорий) - <https://www.npmjs.com/package/del>
     * gulp-autoprefixer(Для добавление префиксов в стилях) - <https://www.npmjs.com/package/gulp-autoprefixer>

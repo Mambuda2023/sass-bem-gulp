@@ -1,5 +1,4 @@
 const gulp = require("gulp");
-const pugGulp = require("gulp-pug");
 const htmlmin = require("gulp-htmlmin");
 const autoprefixer = require("gulp-autoprefixer");
 const sass = require("gulp-sass")(require("sass"));
@@ -11,7 +10,6 @@ const newer = require("gulp-newer");
 
 const uglify = require("gulp-uglify");
 const babel = require("gulp-babel");
-const ts = require("gulp-typescript");
 const size = require("gulp-size");
 const browsersync = require("browser-sync").create();
 const del = require("del");
@@ -31,7 +29,7 @@ const paths = {
     dest: "dist/styles",
   },
   scripts: {
-    src: ["src/script/**/*.js", "./src/script/**/*.ts"],
+    src: ["src/script/**/*.js"],
     dest: "dist/scripts/",
   },
   images: {
@@ -40,10 +38,6 @@ const paths = {
   },
   html: {
     src: ["src/*.html", "src/*.pug"],
-    dest: "dist/",
-  },
-  pug: {
-    src: "src/*.pug",
     dest: "dist/",
   },
 };
@@ -82,12 +76,6 @@ function scripts() {
   return gulp
     .src(paths.scripts.src, { sourcemaps: true })
     .pipe(
-      ts({
-        noImplicitAny: true,
-        outFile: "main.min.js",
-      })
-    )
-    .pipe(
       babel({
         presets: ["@babel/env"],
       })
@@ -125,25 +113,12 @@ function html() {
     .pipe(gulp.dest(paths.html.dest))
     .pipe(browsersync.stream());
 }
-/**
- * Обработак расширения pug.
- * Можно изменить путь обратитесь к объекту paths
- */
-function pug() {
-  return gulp
-    .src(paths.pug.src)
-    .pipe(pugGulp())
-    .pipe(size())
-    .pipe(gulp.dest(paths.pug.dest))
-    .pipe(browsersync.stream());
-}
 
 function watch() {
   browsersync.init({
     server: "./dist/",
   });
   gulp.watch(paths.html.dest).on("change", browsersync.reload);
-  gulp.watch(paths.pug.src, pug);
   gulp.watch(paths.html.src, html);
   gulp.watch(paths.styles.src, styles);
   gulp.watch(paths.scripts.src, scripts);
@@ -152,7 +127,7 @@ function watch() {
 
 const build = gulp.series(
   clean,
-  gulp.parallel(html, pug, styles, scripts, images),
+  gulp.parallel(html, styles, scripts, images),
   watch
 );
 
@@ -162,6 +137,5 @@ exports.clean = clean;
 exports.scripts = scripts;
 exports.html = html;
 exports.images = images;
-exports.pug = pug;
 exports.build = build;
 exports.default = build;
