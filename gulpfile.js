@@ -13,8 +13,6 @@ const babel = require("gulp-babel");
 const size = require("gulp-size");
 const browsersync = require("browser-sync").create();
 const del = require("del");
-const $ = require("jquery");
-
 /**
  * Данный объект содержит зависимости
  * Если структура файлов другая просто измениете ее
