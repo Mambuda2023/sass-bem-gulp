@@ -1,7 +1,7 @@
 const gulp = require("gulp");
 const htmlmin = require("gulp-htmlmin");
 const autoprefixer = require("gulp-autoprefixer");
-const sass = require("gulp-sass")(require("sass"));
+const sass = require('gulp-sass')(require('sass'))
 const cleanCSS = require("gulp-clean-css");
 
 const concat = require("gulp-concat");
@@ -23,11 +23,15 @@ const del = require("del");
 
 const paths = {
   styles: {
-    src: ["src/sass/**/*.sass", "./src/css/**/*.css"],
+    src: ["src/scss/**/*.scss"],
     dest: "dist/styles",
   },
   scripts: {
-    src: ["src/script/**/*.js"],
+    src: [
+      "node_modules/jquery/dist/jquery.js",
+      "node_modules/slick-carousel/slick/slick.js",
+      "src/script/**/*.js",
+    ],
     dest: "dist/scripts/",
   },
   images: {
@@ -54,7 +58,7 @@ function clean() {
 function styles() {
   return gulp
     .src(paths.styles.src)
-    .pipe(sass({ outputStyle: "compressed" }))
+    .pipe(sass())
     .pipe(
       autoprefixer({
         cascade: false,
