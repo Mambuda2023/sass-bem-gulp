@@ -39,13 +39,20 @@
                 </li>
               </ul>
             </nav>
-            <button class="header__btn" role="menu">
+            <button
+              class="header__btn"
+              role="menu"
+              aria-label="Открыть боковое меню"
+            >
               <!-- Открывает боковую колонку -->
               <img src="images/icon_menu.svg" alt="Icon menu" />
             </button>
             <div class="rightside-menu">
               <!-- Боковая колонка -->
-              <button class="rightside-menu__close">
+              <button
+                class="rightside-menu__close"
+                aria-label="Закрыть боковое меню"
+              >
                 <img src="images/close-icon.svg" alt="Close menu" />
               </button>
               <div class="rightside-menu__content">
@@ -79,14 +86,16 @@
 
       <main class="main">
         <section class="top">
+          <h2 class="visually-hidden" aria-hidden="true" aria-label="Слайдер">
+            Слайдер
+          </h2>
           <div class="top__inner">
-            <section class="top__slider">
-              <h2 class="visually-hidden">Слайдер</h2>
+            <div class="top__slider">
               <article class="top__slider-item">
                 <img
                   class="top__slider-img"
-                  src="images/content/slider-img.jpg"
-                  alt="Слайдер"
+                  src="images/slider-img.jpg"
+                  alt="Контентное изображение"
                 />
                 <div class="top__slider-info">
                   <h3 class="top__slider-title">Furniture collection</h3>
@@ -97,10 +106,42 @@
                   </p>
                 </div>
               </article>
-            </section>
+              <article class="top__slider-item">
+                <img
+                  class="top__slider-img"
+                  src="images/slider-img.jpg"
+                  alt="Контентное изображение"
+                />
+                <div class="top__slider-info">
+                  <h3 class="top__slider-title">Furniture collection</h3>
+                  <p class="top__slider-text">
+                    Deep v you probably haven't heard of them banh mi synth
+                    actually affogato. Aesthetic lyft ethical drinking vinegar
+                    austint
+                  </p>
+                </div>
+              </article>
+              <article class="top__slider-item">
+                <img
+                  class="top__slider-img"
+                  src="images/slider-img.jpg"
+                  alt="Контентное изображение"
+                />
+                <div class="top__slider-info">
+                  <h3 class="top__slider-title">Furniture collection</h3>
+                  <p class="top__slider-text">
+                    Deep v you probably haven't heard of them banh mi synth
+                    actually affogato. Aesthetic lyft ethical drinking vinegar
+                    austint
+                  </p>
+                </div>
+              </article>
+            </div>
           </div>
         </section>
       </main>
+
+      <!-- Footer -->
       <footer class="footer">
         <div class="footer__content">
           <div class="container">

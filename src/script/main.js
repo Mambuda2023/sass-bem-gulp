@@ -9,3 +9,13 @@ menuClose.addEventListener("click", function () {
   rightsidMenu.classList.remove("rightside-menu_hidden");
 });
 //Боковое меню
+//Slider
+$(function () {
+  $(".top__slider").slick({
+    dots: true,
+    arrows: false,
+    fade: true,
+    autoplay: true,
+  });
+});
+//Slider

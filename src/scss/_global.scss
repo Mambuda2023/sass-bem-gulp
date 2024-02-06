@@ -40,3 +40,25 @@ body {
 	margin: 0 auto;
 	padding: 0 15px;
 }
+
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+
+	button {
+		background-color: $title;
+		font-size: 0;
+		border-radius: 50%;
+		width: 8px;
+		height: 8px;
+
+	}
+
+	li.slick-active {
+		button {
+			background-color: #FFEF35;
+		}
+	}
+}
