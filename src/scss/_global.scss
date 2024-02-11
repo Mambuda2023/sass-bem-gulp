@@ -67,3 +67,24 @@ body {
     }
   }
 }
+
+.breadcrumbs {
+  background: rgba(#dfdfdf, 0.7);
+  padding: 22px 0;
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &__item:not(:last-child):after {
+    content: "/";
+    margin-left: 4px;
+    margin-right: -4px;
+  }
+  &__link {
+    color: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 28px;
+  }
+}

@@ -1,36 +1,50 @@
 .header__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 120px;
 
-    .menu {
-        padding-right: 15px;
+  .menu {
+    padding-right: 15px;
 
-
-        &__list {
-            display: flex;
-        }
-
-        &__list-item {
-            padding-left: 35px;
-            padding-right: 45px;
-        }
-
-        &__list-link {
-            @extend %title-font;
-            color: rgba(54, 56, 56, .9);
-            font-size: 1rem;
-            line-height: 22px;
-        }
+    &__list {
+      display: flex;
     }
 
-    &:hover,
-    &:active {
-        color: rgba(15, 15, 15, 0.9);
+    &__list-item {
+      padding-left: 35px;
+      padding-right: 45px;
     }
 
-    .logo {
-        margin: 0 auto;
+    &__list-link {
+      @extend %title-font;
+      color: rgba(54, 56, 56, 0.9);
+      font-size: 1rem;
+      line-height: 22px;
     }
+  }
+
+  &:hover,
+  &:active {
+    color: rgba(15, 15, 15, 0.9);
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+}
+
+.menu__list-link_active {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    background: rgba($title, 0.7);
+    background-repeat: 5px;
+  }
 }
