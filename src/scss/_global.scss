@@ -1,69 +1,69 @@
 html,
 body {
-	height: 100%;
-	color: $default;
-	font-size: 16px;
-	font-family: sans-serif;
-	font-weight: 400;
-	line-height: 27px;
-	overflow-x: hidden;
+  height: 100%;
+  color: $default;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 27px;
+  overflow-x: hidden;
 }
 
 .visually-hidden {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	padding: 0;
-	overflow: hidden;
-	border: 0;
-	clip: rect(0 0 0 0);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  transform: scale(0) translate(-1000px) skew(100deg);
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 .wrapper {
-	display: flex;
-	flex-direction: column;
-	min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .main {
-	flex: 1 0 auto;
-	height: 100%;
+  flex: 1 0 auto;
+  height: 100%;
 }
 
 .footer {
-	flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .container {
-	max-width: 1140px;
-	margin: 0 auto;
-	padding: 0 15px;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
-.container-fluid{
-	max-width: 1920px;
-	margin: 0 auto;
-	padding: 0 10px;
+.container-fluid {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .slick-dots {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 
-	button {
-		background-color: $title;
-		font-size: 0;
-		border-radius: 50%;
-		width: 8px;
-		height: 8px;
+  button {
+    background-color: $title;
+    font-size: 0;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+  }
 
-	}
-
-	li.slick-active {
-		button {
-			background-color: #FFEF35;
-		}
-	}
+  li.slick-active {
+    button {
+      background-color: #ffef35;
+    }
+  }
 }
