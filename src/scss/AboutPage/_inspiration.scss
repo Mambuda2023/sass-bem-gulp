@@ -1,0 +1,78 @@
+.inspiration {
+  padding-top: 100px;
+  position: relative;
+  margin-bottom: 80px;
+  &::after {
+    position: absolute;
+    content: "";
+    background: url(../../images/about/inspiration-bg.png) center/cover
+      no-repeat;
+    left: 0;
+    right: 0;
+    top: 261px;
+    bottom: 0;
+    z-index: -2;
+    max-height: 414px;
+    height: 100%;
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 78px;
+    justify-content: center;
+  }
+  &__images {
+    margin-left: -200px;
+  }
+  &__content {
+    max-width: 825px;
+  }
+  &__title {
+    position: relative;
+    margin-bottom: 30px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 60px;
+    &::after {
+      position: absolute;
+      content: "";
+      height: 1px;
+      background-color: rgba($title, 0.7);
+      max-width: 200px;
+      width: 100%;
+      bottom: -15px;
+      left: 0;
+    }
+  }
+  &__text {
+    margin-bottom: 30px;
+    line-height: 27px;
+    color: #5a5a5a;
+  }
+
+  &__item {
+    @extend %title-font;
+    color: $title;
+    line-height: 23px;
+    position: relative;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  &__item-content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #fff;
+    border-radius: 4px;
+  }
+
+  &__line {
+    height: 2px;
+    background: $title;
+    background-repeat: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
