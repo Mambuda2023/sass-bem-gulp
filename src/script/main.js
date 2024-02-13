@@ -18,6 +18,14 @@ $(function () {
     autoplay: true,
   });
 });
+$(function () {
+  $(".contact-slider").slick({
+    slidesToShow: 8,
+    slidesToScroll: 2,
+    dots: true,
+    arrows: false,
+  });
+});
 //Slider
 
 //Tab Slider
