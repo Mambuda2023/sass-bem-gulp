@@ -22,27 +22,6 @@
     &-text {
       max-width: 470px;
     }
-
-    &-email {
-      margin-bottom: 16px;
-      font-weight: 600;
-      color: $title;
-      font-size: 14px;
-      padding-left: 30px;
-      display: inline-block;
-      position: relative;
-
-      &::before {
-        background-image: url(../images/email-icon.svg);
-        content: "";
-        left: 0;
-        position: absolute;
-        width: 16px;
-        height: 12px;
-        top: 50%;
-        transform: translateY(-50%);
-      }
-    }
   }
 
   &__form {
@@ -54,6 +33,7 @@
       background-color: transparent;
       opacity: 0.7;
       border: 1px solid rgba($title, 0.7);
+      margin-right: 9px;
     }
 
     &:placeholder {
@@ -61,15 +41,6 @@
       font-size: 1rem;
       line-height: 27px;
       color: #a1a1a1;
-    }
-    &-button {
-      color: #fffff0;
-      background-color: $title;
-      border-radius: 12px;
-      font-weight: 600;
-      padding: 6px 12px;
-      min-width: 160px;
-      margin-left: 9px;
     }
   }
 

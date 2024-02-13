@@ -44,16 +44,16 @@ p {
 
 ul,
 ul li {
-  list-style: none
+  list-style: none;
 }
 
 img {
-  vertical-align: top
+  vertical-align: top;
 }
 
 img,
 svg {
-  max-width: 100%
+  max-width: 100%;
 }
 
 address {
@@ -72,8 +72,9 @@ select {
   background-color: transparent;
 }
 
+
 input::-ms-clear {
-  display: none
+  display: none;
 }
 
 button,

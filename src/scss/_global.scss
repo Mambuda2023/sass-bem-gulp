@@ -89,3 +89,40 @@ body {
     line-height: 28px;
   }
 }
+.info-email {
+  margin-bottom: 16px;
+  font-weight: 600;
+  color: $title;
+  font-size: 14px;
+  padding-left: 30px;
+  display: inline-block;
+  position: relative;
+
+  &::before {
+    background-image: url(../images/email-icon.svg);
+    content: "";
+    left: 0;
+    position: absolute;
+    width: 16px;
+    height: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.form-button {
+  transition: all 0.3s ease-in;
+  color: #fffff0;
+  background-color: $title;
+  border-radius: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  min-width: 160px;
+  &:hover {
+    background-color: #262727;
+    transform: scale(1.05);
+  }
+  &:active {
+    background-color: #262727;
+    transform: scale(0.9);
+  }
+}

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.min.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <nav class="menu">
+              <!-- Левая часть Header -->
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="about.html">About</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="gallery.html">Gallery</a>
+                </li>
+              </ul>
+            </nav>
+            <a class="logo" href="#">
+              <img src="images/logo.svg" alt="Логотип" />
+            </a>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="blog.html">Blog</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link menu__list-link_active" href="#">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <button class="header__btn" aria-label="Открыть боковое меню">
+              <!-- Открывает боковую колонку -->
+              <img src="images/icon_menu.svg" alt="Icon menu" />
+            </button>
+            <div class="rightside-menu">
+              <!-- Боковая колонка -->
+              <button
+                class="rightside-menu__close"
+                aria-label="Закрыть боковое меню"
+              >
+                <img src="images/close-icon.svg" alt="Close menu" />
+              </button>
+              <div class="rightside-menu__content">
+                <a class="logo" href="#">
+                  <img
+                    src="images/logo.svg"
+                    alt="Logo rightside menu"
+                    width="160"
+                    height="58"
+                  />
+                </a>
+                <h4 class="rightside-menu__title">Furniture for life</h4>
+                <p class="rightside-menu__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Possimus necessitatibus qui ut quos aspernatur placeat facere
+                  quis.
+                </p>
+                <img
+                  class="rightside-menu__images"
+                  src="images/content/rightside-img.jpg"
+                  alt="Images"
+                  height="250"
+                />
+              </div>
+              <!-- Боковая колонка -->
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="breadcrumbs">
+          <div class="container">
+            <nav class="breadcrumbs__navigatoin">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="index.html">home</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="#">contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.669799563669!2d-122.42518952338119!3d37.797777471979515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580e839d7e541%3A0xf89b6220c55337a7!2zR3JlZW4gU3QsIFNhbiBGcmFuY2lzY28sIENBLCDQodCo0JA!5e0!3m2!1sru!2sru!4v1707775917226!5m2!1sru!2sru"
+            width="100%"
+            height="578"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+
+        <section class="contact">
+          <div class="container">
+            <h3 class="contact__title">Contact Us</h3>
+
+            <div class="contact__box">
+              <p class="contact__text">
+                Vexillologist vape microdosing freegan pork belly deep v direct
+                trade cray single-origin coffee street art. Viral shaman
+                mustache master cleanse, pour-over affogato poutine copper mug
+                marfa fanny pack normcore. Lo-fi pop-up banjo portland, echo
+                park hammock
+              </p>
+              <ul class="contact__social">
+                <li class="contact__social-item">
+                  <a class="contact__social-link" href="#">
+                    <img
+                      class="contact__social-img"
+                      src="images/facebook-icon.svg"
+                      alt="facebook"
+                    />
+                  </a>
+                </li>
+                <li class="contact__social-item">
+                  <a class="contact__social-link" href="#">
+                    <img
+                      class="contact__social-img"
+                      src="images/instagram-icon.svg"
+                      alt="instagram"
+                    />
+                  </a>
+                </li>
+                <li class="contact__social-item">
+                  <a class="contact__social-link" href="#">
+                    <img
+                      class="contact__social-img"
+                      src="images/pinterest-icon.svg"
+                      alt="pinterest"
+                    />
+                  </a>
+                </li>
+                <li class="contact__social-item">
+                  <a class="contact__social-link" href="#">
+                    <img
+                      class="contact__social-img"
+                      src="images/whatsapp-icon.svg"
+                      alt="whatsapp"
+                    />
+                  </a>
+                </li>
+                <li class="contact__social-item">
+                  <a class="contact__social-link" href="#">
+                    <img
+                      class="contact__social-img"
+                      src="images/youtube-icon.svg"
+                      alt="youtube"
+                    />
+                  </a>
+                </li>
+              </ul>
+              <a class="contact__phone" href="tel:4158297934">
+                (415) 829-7934
+              </a>
+              <div class="contact__st">725 Green St</div>
+              <div class="contact__sity">
+                San Francisco, California(CA), 94133
+              </div>
+              <a class="info-email" href="mailto:ouremailaddress@email.com">
+                ouremailaddress@email.com
+              </a>
+            </div>
+
+            <form action="" class="contact__form">
+              <input
+                class="contact__form-input"
+                type="text"
+                placeholder="Your name"
+              />
+              <input
+                class="contact__form-input"
+                type="email"
+                placeholder="Your e-mail"
+              />
+              <textarea
+                placeholder="Your message"
+                cols="30"
+                rows="10"
+                class="contact__form-area contact__form-input"
+              ></textarea>
+              <button class="contact__form-btn form-button" type="submit">
+                Send
+              </button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__content">
+          <div class="container">
+            <div class="footer__inner">
+              <div class="footer__info">
+                <h6 class="footer__info-title">Contact Us</h6>
+                <p class="footer__info-text">
+                  Keffiyeh poutine etsy, paleo cray put a bird on it microdosing
+                  schlitz you probably occupy
+                </p>
+                <a class="info-email" href="mailto:ouremailaddress@email.com">
+                  ouremailaddress@email.com
+                </a>
+                <form class="footer__form" action="#">
+                  <input
+                    class="footer__form-input"
+                    type="email"
+                    placeholder="Subscribe by email"
+                  />
+                  <button class="form-button" type="submit">Send</button>
+                </form>
+              </div>
+              <ul class="footer__social">
+                <li class="footer__social-item">
+                  <a
+                    class="footer__social-link footer__social-link_facebook"
+                    href="#"
+                    target="_blank"
+                  >
+                    Facebook
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a
+                    class="footer__social-link footer__social-link_instagram"
+                    href="#"
+                    target="_blank"
+                  >
+                    Instagram
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a
+                    class="footer__social-link footer__social-link_pinterest"
+                    href="#"
+                    target="_blank"
+                  >
+                    Pinterest
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a
+                    class="footer__social-link footer__social-link_whatsApp"
+                    href="#"
+                    target="_blank"
+                  >
+                    WhatsApp
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a
+                    class="footer__social-link footer__social-link_youtube"
+                    href="#"
+                    target="_blank"
+                  >
+                    Youtube
+                  </a>
+                </li>
+              </ul>
+
+              <nav class="footer__menu">
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#" target="_blank">
+                      Delivery
+                    </a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#" target="_blank">
+                      FAQ
+                    </a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#" target="_blank">
+                      Help
+                    </a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#" target="_blank">
+                      More About Us
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <p class="container">674 Gonzales Drive. Washington 15301</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="scripts/main.min.js"></script>
+  </body>
+</html>
