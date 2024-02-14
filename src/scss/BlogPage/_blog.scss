@@ -1,0 +1,123 @@
+.blog {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 80px;
+
+  &__title {
+    color: $title;
+    line-height: 23px;
+    @extend %title-font;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  &__items {
+    overflow: hidden;
+  }
+
+  &__category {
+    margin-bottom: 60px;
+
+    &-title {
+      margin-bottom: 20px;
+    }
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &-link {
+      color: $default;
+      font-size: 400;
+      line-height: 27px;
+    }
+  }
+
+  &-tags {
+    margin-bottom: 60px;
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__item-link {
+      display: inline-block;
+      border: 1px solid #8f8d8d;
+      border-radius: 20px;
+      padding: 7px 15px;
+      color: #8f8d8d;
+      font-size: 400;
+      line-height: 27px;
+      margin: 0 15px 15px 0;
+    }
+  }
+}
+
+.aside {
+  max-width: 374px;
+  width: 100%;
+  &__search {
+    position: relative;
+  }
+  &__search-input {
+    padding: 6px 38px 6px 18px;
+    border: 1px solid rgba($title, 0.7);
+    border-radius: 20px;
+    display: block;
+    width: 100%;
+    margin-bottom: 45px;
+    &::placeholder {
+      font-weight: 400;
+      font-size: 16px;
+      font-family: "Open Sans" sans-serif;
+      line-height: 27px;
+      color: #a1a1a1;
+    }
+  }
+  &__search-btn {
+    background-color: transparent;
+    position: absolute;
+    right: 15px;
+    top: 25%;
+  }
+}
+
+.recent-posts {
+  margin-bottom: 60px;
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__item-title {
+    display: inline-block;
+    color: $default;
+    font-size: 400;
+    line-height: 27px;
+  }
+  &__date,
+  &__author {
+    color: #a1a1a1;
+    font-size: 14px;
+    line-height: 28px;
+  }
+}
+
+.contact-social {
+  &__list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  &__item-img {
+    width: 18px;
+    height: 18px;
+  }
+}
