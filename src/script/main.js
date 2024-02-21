@@ -9,7 +9,10 @@ menuClose.addEventListener("click", function () {
   rightsidMenu.classList.remove("rightside-menu_hidden");
 });
 //Боковое меню
+
+
 //Slider
+
 $(function () {
   $(".top__slider").slick({
     dots: true,
@@ -17,13 +20,26 @@ $(function () {
     fade: true,
     autoplay: true,
   });
-});
-$(function () {
   $(".contact-slider").slick({
     slidesToShow: 8,
     slidesToScroll: 2,
     dots: true,
     arrows: false,
+  });
+
+  $(".article-slider__box").slick({
+    prevArrow: `<button class="slick-prev article-popup__box_prev">
+   <img
+     src="images/blog/arrow-slide-left.svg"
+     alt="Next slide"
+   />
+ </button>`,
+    nextArrow: `<button class="slick-next article-popup__box_next">
+   <img
+     src="images/blog/arrow-slide-right.svg"
+     alt="Next slide"
+   />
+ </button>`,
   });
 });
 //Slider

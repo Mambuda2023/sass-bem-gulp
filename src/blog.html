@@ -78,7 +78,7 @@
         </div>
       </header>
 
-      <main class="main">
+      <main class="main" hidden>
         <div class="breadcrumbs">
           <div class="container">
             <nav class="breadcrumbs__navigatoin">
@@ -97,7 +97,151 @@
         <section class="blog">
           <div class="container">
             <div class="blog__inner">
-              <div class="blog__items"></div>
+              <div class="blog__items">
+                <div class="blog__item">
+                  <img
+                    class="blog__item-img"
+                    src="images/blog/blog-big.jpg"
+                    alt="Blog images"
+                  />
+
+                  <div class="blog__item-info">
+                    <time class="blog__item-date" datetime="2020-08-15">
+                      August 15, 2020
+                    </time>
+                    | <a class="blog__item-author" href="#">by Ann Summers</a> |
+                    <a class="blog__item-them" href="#">Bedroom Furniture</a>
+                  </div>
+                  <h3 class="blog__item-title">
+                    Red selfies edison bulb four dollar toast humblebrag for the
+                    furniture
+                  </h3>
+                  <p class="blog__item-text">
+                    Everyday carry actually neutra authentic kogi shabby chic
+                    migas small batch craft beer. Literally williamsburg tote
+                    bag farm-to-table mustache ugh deep v irony. Af man bun
+                    copper mug iPhone enamel pin pug selvage hammock palo santo
+                    godard thundercats coloring book yuccie woke. Ugh pok pok
+                    taxidermy pabst enamel pin edison bulb farm-to-table
+                  </p>
+                </div>
+
+                <blockquote class="blog__blockquote">
+                  “Simplicity is not the goal. It is the by-product of a good
+                  idea and modest expectations”
+                  <p class="blog__blockquote-author">Paul Rand</p>
+                </blockquote>
+
+                <div class="blog__item article-popup">
+                  <div class="article-popup__box">
+                    <img
+                      class="blog__item-img"
+                      src="images/blog/blog-big.jpg"
+                      alt="Images"
+                    />
+                    <a
+                      class="blog__item-popup"
+                      data-fancybox
+                      href="https://www.youtube.com/watch?v=_hiP0rHSLKM"
+                    >
+                      <img
+                        class="blog__item-play"
+                        src="images/about/play-button.svg"
+                        alt="Popup play video"
+                        height="80"
+                        width="80"
+                      />
+                    </a>
+                  </div>
+                  <div class="blog__item-info">
+                    <time class="blog__item-date" datetime="2020-08-15">
+                      August 15, 2020
+                    </time>
+                    |
+                    <a class="blog__item-author" href="#">by Lux Morningstar</a
+                    >|
+                    <a class="blog__item-them" href="#">Design</a>
+                  </div>
+
+                  <h3 class="blog__item-title">Authentic kogi shabby chic</h3>
+                </div>
+
+                <div class="blog__item article-slider">
+                  <div class="article-slider__wrapper">
+                    <div class="article-slider__box">
+                      <img
+                        class="article-slider__img"
+                        src="images/blog/blog-1.jpg"
+                        alt="Images"
+                      />
+                      <img
+                        class="article-slider__img"
+                        src="images/blog/blog-1.jpg"
+                        alt="Images"
+                      />
+                      <img
+                        class="article-slider__img"
+                        src="images/blog/blog-1.jpg"
+                        alt="Images"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="blog__item-info">
+                    <time class="blog__item-date" datetime="2020-08-18">
+                      August 18, 2020
+                    </time>
+                    | <a class="blog__item-author" href="#">by Ann Summers</a> |
+                    <a class="blog__item-them" href="#"> Table Furniture </a>
+                  </div>
+
+                  <h3 class="blog__item-title">
+                    Semiotics fixie four dollar toast, next level woke
+                  </h3>
+                  <p class="blog__item-text">
+                    Everyday carry actually neutra authentic kogi shabby chic
+                    migas small batch craft beer. Literally williamsburg tote
+                    bag farm-to-table mustache ugh deep v irony. Af man bun
+                    copper mug iPhone enamel pin pug selvage hammock palo santo
+                    godard thundercats coloring book yuccie woke. Ugh pok pok
+                    taxidermy pabst enamel pin edison bulb farm-to-table
+                  </p>
+                </div>
+                <div class="pagination">
+                  <a
+                    class="pagination__arrow pagination__arrow_disabled"
+                    href="#"
+                  >
+                    <img
+                      class="pagination-arrow__icon"
+                      src="images/blog/arrow-left.svg"
+                      alt="Arrow prew"
+                    />
+                  </a>
+
+                  <ul class="pagination__list">
+                    <li class="pagination__list-item">
+                      <span
+                        class="pagination__list-num pagination__list-num_active"
+                      >
+                        1
+                      </span>
+                    </li>
+                    <li class="pagination__list-item">
+                      <a class="pagination__list-num" href="#">2</a>
+                    </li>
+                  </ul>
+
+                  <a class="pagination__arrow" href="#">
+                    <img
+                      class="pagination-arrow__icon"
+                      src="images/blog/arrow-right.svg"
+                      alt="Arrow next"
+                    />
+                  </a>
+                </div>
+              </div>
+
               <aside class="aside">
                 <form class="aside__search" action="#">
                   <input
@@ -150,7 +294,9 @@
                       <a class="recent-posts__item-title" href="#">
                         Cred selfies edison bulb four dollar toast humblebrag
                       </a>
-                      <time class="recent-posts__date">August 10, 2020</time>
+                      <time class="recent-posts__date" datetime="2020-08-10">
+                        August 10, 2020
+                      </time>
                       |
                       <a class="recent-posts__author" href="#">
                         by Ann Summers
@@ -162,7 +308,9 @@
                         Semiotics fixie four dollar toast, next level woke
                         scenester direct trade photo booth
                       </a>
-                      <time class="recent-posts__date">September 30 ,2020</time>
+                      <time class="recent-posts__date" datetime="2020-09-30">
+                        September 30 ,2020
+                      </time>
                       |
                       <a class="recent-posts__author" href="#">
                         by Ann Summers
@@ -173,7 +321,9 @@
                       <a class="recent-posts__item-title" href="#">
                         Cred selfies edison bulb four dollar toast humblebrag
                       </a>
-                      <time class="recent-posts__date">May 2, 2020</time>
+                      <time class="recent-posts__date" datetime="2020-05-30">
+                        May 30, 2020
+                      </time>
                       |
                       <a class="recent-posts__author" href="#">
                         by Ann Summers
@@ -184,7 +334,6 @@
 
                 <article class="blog-tags">
                   <h6 class="blog-tags__title blog__title">Tags</h6>
-
                   <a class="blog-tags__item-link" href="#">
                     Dining room futniture
                   </a>
@@ -258,7 +407,6 @@
           </div>
         </section>
       </main>
-
       <footer class="footer">
         <div class="footer__content">
           <div class="container">

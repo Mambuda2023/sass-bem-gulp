@@ -16,7 +16,60 @@
     gap: 30px;
   }
   &__items {
-    overflow: hidden;
+    max-width: 650px;
+  }
+
+  &__item-img {
+    margin-bottom: 30px;
+  }
+  &__item-info > * {
+    color: #707070;
+    font-size: 14px;
+    line-height: 28px;
+  }
+  &__item-info {
+    margin-bottom: 30px;
+  }
+
+  &__item-title {
+    margin-bottom: 20px;
+    color: $title;
+    font-size: 24px;
+    line-height: 38px;
+  }
+  &__item-text {
+    margin-bottom: 30px;
+    color: #5a5a5a;
+    line-height: 27px;
+  }
+  &__blockquote {
+    margin-bottom: 80px;
+    background: #dfdfdf;
+    position: relative;
+    padding: 50px 70px;
+    text-align: center;
+    &::after {
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-55%, -50%);
+      content: "";
+      width: 200px;
+      height: 1px;
+      background-color: #979797;
+    }
+    &-author {
+      margin-top: 30px;
+      color: #363838;
+      line-height: 22px;
+      font-weight: bold;
+    }
+  }
+  &__item-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   &__category {
@@ -33,7 +86,7 @@
 
     &-link {
       color: $default;
-      font-size: 400;
+      font-weight: 400;
       line-height: 27px;
     }
   }
@@ -119,5 +172,58 @@
   &__item-img {
     width: 18px;
     height: 18px;
+  }
+}
+
+.article {
+  &-slider__wrapper {
+    position: relative;
+  }
+  &-popup__box {
+    position: relative;
+    margin-bottom: 30px;
+    &_prev {
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      transform: translateY(50%);
+      z-index: 10;
+    }
+    &_next {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &-slider__box {
+    margin-bottom: 30px;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  &__arrow {
+    display: flex;
+  }
+  &__list {
+    display: flex;
+    gap: 10px;
+  }
+  &__list-item {
+  }
+  &__list-num {
+    color: #707070;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  &__list-num_active {
+    color: $title;
+  }
+  &__arrow_disabled {
+    display: none;
   }
 }
