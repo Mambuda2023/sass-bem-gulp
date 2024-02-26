@@ -76,6 +76,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+    overflow-x: auto;
   }
   &__item:not(:last-child):after {
     content: "/";

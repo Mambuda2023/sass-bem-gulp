@@ -1,6 +1,9 @@
 //Боковое меню
 const rightsidMenu = document.querySelector(".rightside-menu");
 const headerBtn = document.querySelector(".header__btn");
+const headerBtnOpen = document.querySelector(".header__btn-menu");
+const menu = document.querySelectorAll(".menu");
+
 const menuClose = document.querySelector(".rightside-menu__close");
 headerBtn.addEventListener("click", function () {
   rightsidMenu.classList.add("rightside-menu_hidden");
@@ -8,8 +11,13 @@ headerBtn.addEventListener("click", function () {
 menuClose.addEventListener("click", function () {
   rightsidMenu.classList.remove("rightside-menu_hidden");
 });
-//Боковое меню
 
+headerBtnOpen.addEventListener("click", () => {
+  menu.forEach((element) => {
+    element.classList.toggle("menu--open");
+  });
+});
+//Боковое меню
 
 //Slider
 
