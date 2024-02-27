@@ -58,3 +58,13 @@
     }
   }
 }
+@media (max-width: 600px) {
+  .gallery {
+    &.gallery-page {
+      .gallery__item:nth-child(8) {
+        grid-column: 1;
+        grid-row: 1;
+      }
+    }
+  }
+}
