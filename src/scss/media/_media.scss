@@ -43,7 +43,7 @@
       width: 100%;
     }
     &__form-input {
-      width: 100%;
+      margin-right: 0;
     }
     &__social {
       width: 50%;
@@ -80,6 +80,7 @@
   .header__inner {
     flex-wrap: wrap;
     padding-top: 42px;
+    max-height: 50px;
     .logo {
       position: relative;
       z-index: 13;
