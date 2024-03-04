@@ -51,3 +51,12 @@
 .header__btn-menu {
   display: none;
 }
+
+@media (max-width: 540px) {
+  .menu__list-link_active {
+    &::after {
+      position: absolute;
+      display: none;
+    }
+  }
+}

@@ -33,10 +33,60 @@ $(function () {
     slidesToScroll: 2,
     dots: true,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 17000,
+        settings: {
+          slidesToShow: 7,
+          slidesToScroll: 7,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 1500,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 5,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 1204,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 850,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 650,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 430,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
 
   $(".article-slider__box").slick({
-    prevArrow: `<button class="slick-prev article-popup__box_prev">
+    prevArrow: `<button class="slick-prev article-popup__box_prev">Q
    <img
      src="images/blog/arrow-slide-left.svg"
      alt="Next slide"

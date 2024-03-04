@@ -82,3 +82,42 @@
     }
   }
 }
+@media (max-width: 1700px) {
+  .contact-slider {
+    &__img {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 1140px) {
+  .contact {
+    &__form-input {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .contact {
+    padding-bottom: 40px;
+
+    &__box {
+      padding-left: 0;
+    }
+    &__form {
+      padding-left: 0;
+    }
+
+    &__title {
+      line-height: 25px;
+      font-size: 25px;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+
+      @extend %title-font;
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
